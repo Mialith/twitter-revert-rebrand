@@ -93,7 +93,7 @@ window.onload = () => {
 
     // loading icon
     waitFor('#placeholder > svg', element => {
-        if (element.innerHTML != twitterIcon) {
+        if (element.innerHTML !== twitterIcon) {
             element.innerHTML = twitterIcon;
             element.setAttribute('viewBox', '0 0 16 16');
             element.style.fill = getColor();
@@ -102,7 +102,7 @@ window.onload = () => {
 
     // sidebar twitter icon
     waitFor('[aria-label="X"] svg', element => {
-        if (element.innerHTML != twitterIcon) {
+        if (element.innerHTML !== twitterIcon) {
             element.innerHTML = twitterIcon;
             element.setAttribute('viewBox', '0 0 16 16');
             element.style.fill = getColor();
@@ -120,7 +120,7 @@ window.onload = () => {
 
     // timeline tweet button text
     waitFor('[data-testid="toolBar"] > div span span', element => {
-        if (element.textContent == 'Post') {
+        if (element.textContent === 'Post') {
             element.textContent = 'Tweet';
         }
     });
@@ -171,8 +171,6 @@ window.onload = () => {
     waitForAll('h2 span', element => {
         if (element.textContent?.includes('Post')) {
             element.textContent = element.textContent.replace('Post', 'Tweet');
-        } else if (element.textContent?.includes('X')) {
-            element.textContent = element.textContent.replace('X', 'Twitter');
         }
     });
 

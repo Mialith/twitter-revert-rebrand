@@ -1,0 +1,15 @@
+{
+  "name": "twitter-revert-rebrand",
+  "version": "1.0.0",
+  "description": "Changes the Twitter UI back to the pre-Musk era",
+  "main": "",
+  "scripts": {
+    "build": "rmdir /q /s dist & npx tsc && xcopy public dist /s"
+  },
+  "keywords": [],
+  "author": "Mialith",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@types/chrome": "^0.0.254"
+  }
+}

@@ -3,10 +3,6 @@
     "name": "Twitter Revert Rebrand",
     "description": "Chirp chirp",
     "version": "1.0.0",
-    "permissions": [
-        "activeTab",
-        "storage"
-    ],
     "icons": {
         "16": "images/twitter-16.png",
         "32": "images/twitter-32.png",
